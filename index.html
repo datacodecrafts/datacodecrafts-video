@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Embed a YouTube Video — A Step-by-Step Tutorial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+      <h1>How to Embed a YouTube Video</h1>
+      <p class="hero-sub">Step-by-step instructions on how to embed any embeddable YouTube video directly into an HTML page. No flash, no download, just copy and paste the embed code. I will be using this royalty-free waterfall nature video as an example below.</p>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="intro">
+      <p>Embedding allows you to play YouTube videos directly on your webpage rather than providing a link to YouTube. Here are the five steps I took to embed this video at the bottom of this page. I have included a screenshot of each step.</p>
+    </section>
+
+    <section class="steps">
+
+      <article class="step">
+        <div class="step-marker">
+          <span class="step-number">01</span>
+        </div>
+        <div class="step-body">
+          <h2>Find and open the video on YouTube</h2>
+          <p>Go to <strong>youtube.com</strong> and search for the video you want to embed. For this tutorial, I used a short, free-use nature clip called <em>"Free Waterfall 4k Videoclip."</em> Click the video's thumbnail to open it.</p>
+          <div class="screenshot-frame">
+            <div class="browser-chrome">
+              <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+              <span class="url-bar">youtube.com/results?search_query=free+waterfall+4k+video+clip</span>
+            </div>
+            <img src="images/step1.jpeg" alt="YouTube search results with the target video's thumbnail circled">
+          </div>
+        </div>
+      </article>
+
+      <article class="step">
+        <div class="step-marker">
+          <span class="step-number">02</span>
+        </div>
+        <div class="step-body">
+          <h2>Click the "Share" button</h2>
+          <p>Below the video player, find the row of icons under the title and click <strong>Share</strong> (labeled "Paylaş" in this browser's Turkish interface). This opens a menu with several sharing options.</p>
+          <div class="screenshot-frame">
+            <div class="browser-chrome">
+              <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+              <span class="url-bar">youtube.com/watch?v=w6uX9jamcwQ</span>
+            </div>
+            <img src="images/step2.jpeg" alt="Arrow pointing to the Share button below the video">
+
+      <article class="step">
+        <div class="step-marker">
+          <span class="step-number">03</span>
+        </div>
+        <div class="step-body">
+          <h2>Select "Embed" from the share menu</h2>
+          <p>A panel of sharing icons appears (Messages, WhatsApp, Facebook, etc.). The first icon — a pair of angle brackets <code>&lt; &gt;</code> — is <strong>Embed</strong>. Click it.</p>
+          <div class="screenshot-frame">
+            <div class="browser-chrome">
+              <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+              <span class="url-bar">youtube.com/watch?v=w6uX9jamcwQ</span>
+            </div>
+            <img src="images/step3.jpeg" alt="Share menu with the Embed (angle brackets) icon circled">
+
+      <article class="step">
+        <div class="step-marker">
+          <span class="step-number">04</span>
+        </div>
+        <div class="step-body">
+          <h2>Copy the embed code</h2>
+          <p>YouTube generates an <code>&lt;iframe&gt;</code> snippet in a text box, with a <strong>Copy</strong> button beside it. Click Copy to save that code to your clipboard.</p>
+          <div class="screenshot-frame">
+            <div class="browser-chrome">
+              <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+              <span class="url-bar">youtube.com/watch?v=w6uX9jamcwQ</span>
+            </div>
+            <img src="images/step4.jpeg" alt="Embed code box, fully highlighted, with the Copy button visible">
+
+      <article class="step">
+        <div class="step-marker">
+          <span class="step-number">05</span>
+        </div>
+        <div class="step-body">
+          <h2>Paste the code into your HTML</h2>
+          <p>Open your HTML file (locally in your code editor or directly in the GitHub file editor) and paste the copied &lt;iframe&gt; code directly where you would like the video to be shown. Save (or commit) the file and refresh the page in your browser to check that the video displays.</p>
+          <div class="screenshot-frame">
+            <div class="browser-chrome">
+              <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+              <span class="url-bar">github.com — datacodecrafts-video</span>
+            </div>
+            <img src="images/step5.jpeg" alt="Iframe embed code pasted into a file in the GitHub web editor">
+          </div>
+          <div class="code-block">
+            <span class="code-label">embed code</span>
+            <pre><code>&lt;iframe width="560" height="315"
+  src="https://www.youtube.com/embed/w6uX9jamcwQ"
+  title="YouTube video player" frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write;
+  encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen&gt;
+&lt;/iframe&gt;</code></pre>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="result">
+      <p class="eyebrow">// output</p>
+      <h2>The Embedded Video</h2>
+      <p>Here's the finished result — the same video from the steps above, live and playable right on this page.</p>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/w6uX9jamcwQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Tutorial built for Web Development — Lesson 9 Assignment</p>
+  </footer>
+
+</body>
